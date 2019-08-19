@@ -1,0 +1,7 @@
+/* This is a CSS rule-set that assigns "green" and "right"values to 
+the color and text-align properties respectively. */
+
+p{
+color:blue;
+text-align: center;
+}

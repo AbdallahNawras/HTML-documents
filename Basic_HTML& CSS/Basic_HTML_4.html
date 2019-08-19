@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- use class attribute to identfie each class. -->
+<style>
+.font_1 {
+background-color: black;
+color: yellow;
+font-size:large;
+}
+
+.font_2 {
+background-color: darkblue;
+color:white;
+font-size:medium;
+}
+
+.My_Style {
+background-color: navy;
+color: fuchsia;
+text-decoration: underline;
+font-weight: bold;
+font-size: left;
+}
+
+</style>
+<!-- This will specify which class I need to call to display the text in the way that are instructed in the class call. -->
+<h2 class = "font_1"> This h2 element is styled per class attribute font_1 </h2>
+<h2 class = "font_2"> This h3 element is styled per class attribute font_2 </h2>
+<h4 class = "font_1"> Even though this is h4 element, it is styled the same as the h2 element because to the class attribute font_1</h4>
+<h3 class = "My_Style"> This h4 element is styled per attribute My_Style </h3>
+<p class = "My_Style"> This paragraph is written in my style!</p>
+
+<!-- This is another way to assign style to particular element -->
+<!-- All <h1> element will have a yellow background.  -->
+<!-- All <p> element will have a blue text. -->
+<style>
+h1 {
+background-color: yellow
+}
+
+p {
+color: blue;
+}
+</style>
+
+<h1>Yellow background. </h1>
+<h2>Default styling. </h2>
+<h1>Another yellow background.</h1>
+<p>Blue font.</p>
+
+<!-- this is to separate files. One for CSS file & one for HTML file -->
+<link rel = "stylesheet" type = "text/css" href = "Class_A.css">
+<h2 class = "Class_A"> Good Morning!</h2>
+<h2> Good Afternoon! </h2>
+<h2 class = "Class_A" > Good Night!</h2>
+
+</body>
+</html>
+

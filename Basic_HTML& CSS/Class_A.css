@@ -1,0 +1,10 @@
+/* This will control all the texts that are inside the body of the program. */
+body {
+font-style: italic;
+text-align: center;
+}
+
+/* Create class in separate file. */
+.Class_A{
+color: green;
+}
