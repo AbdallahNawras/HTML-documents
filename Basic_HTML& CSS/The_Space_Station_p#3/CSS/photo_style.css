@@ -1,0 +1,85 @@
+/**********************************************
+GALLARY SECTION ANIMATION
+***********************************************/
+P{
+    font-weight: 300; /*bold text*/
+    line-height: 30px; /*space between lines*/
+    padding-bottom: 15px;
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;/*hide everything comes beyond the border of the image*/
+    border-radius:8px;/*rounding the edges for the images*/
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.photo-container {
+    text-align: center;
+    margin:15px auto; /*first(top/bottom) sec_value:auto(center between right&left)*/
+    width: 300px;
+    height: 169px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;/*to go exactly where I want it to be. Followed be instructions*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;/*for centering text inside photo*/
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+}
+
+.white-head {
+    color: #c9bdaa;
+    margin-top: 5%;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+/****************************************************
+PHOTO Overlay Transitions
+*****************************************************/
+.photo-overlay {
+    opacity: 0; /*do NOT see until you point at it*/
+    transition: opacity 2s;/*you will be able to see it after .1 sec, when pointing at it*/
+    border-radius: .1px;
+    cursor: pointer;
+}
+
+.photo-overlay p {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.photo-overlay:hover {
+    opacity: 1;/*show when pointing at it*/
+}
+
+/*therse two functions will transform the photo to 
+get bigger when pointing at is */
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);/*how bigger it will get (from,to)*/
+}
