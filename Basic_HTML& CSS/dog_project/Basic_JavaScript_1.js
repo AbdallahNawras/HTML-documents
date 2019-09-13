@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--when preeing on"click me" it will call the function"My_First_Function"-->
+<button onclick ="My_First_Function()">
+click me!
+</button>
+<p id="Irish"></p>
+<script>
+
+<!--this is the function that will be called -->
+function My_First_Function()
+{
+var String = "Kiss me, I'm Irish!";
+var result = String.fontcolor("green");
+document.getElementById("Irish").innerHTML = result;
+}
+</script>
+</body>
+</html>
+// alert("Hello, World!");
