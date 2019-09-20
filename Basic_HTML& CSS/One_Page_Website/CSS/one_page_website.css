@@ -1,3 +1,13 @@
+.allGallery #changePhoto{
+transition: 1s;
+width: 200px;
+}
+
+.allGallery #changePhoto:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
 p {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 15px;    

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Body */
 body {
     margin: 0%;
@@ -39,7 +43,7 @@ body {
 
 /* Video */
 #Typing_Video {
-    filter: brightness(75%); 
+    filter: brightness(100%); 
     position: fixed;/* This fixes the video to the page  */
     right: 0;
     bottom: 0;
@@ -50,8 +54,8 @@ body {
 /* Text over the video */
 .Video_Text {
     position: relative;
-    background: rgba(0, 0, 0, 0.5);
-    color: rgb(206, 148, 166);
+    background: rgba(140, 173, 248, 0.4);
+    color: rgb(245, 245, 248);
     width: 100%;
     padding: 20px;
     margin-top: 23%;
@@ -225,3 +229,8 @@ footer {
     padding: 2%;
     background-color:white;
 }
+
+
+
+/* test something */
+
