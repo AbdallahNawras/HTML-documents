@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .allGallery #changePhoto{
 transition: 1s;
 width: 200px;
